@@ -38,3 +38,104 @@ p {
     text-align: center;
     color: red;
 }
+
+
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section#home {
+    background-color: #ffcccb;
+    text-align: center;
+}
+
+section#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section#tutorials {
+    background-color: #fff;
+    text-align: center;
+}
+
+section#tutorials .tutorial {
+    margin-bottom: 1.5rem;
+}
+
+section#about {
+    background-color: #e6f7ff;
+    padding-bottom: 1.5rem;
+}
+
+section#contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+section#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+section#contact form input, section#contact form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section#contact form button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
