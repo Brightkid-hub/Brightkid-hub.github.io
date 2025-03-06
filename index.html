@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Movie Download</title>
+  					
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">		
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>MyStream</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#music">Music</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+   
+  
+  
+  
+   
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for music or movies...">
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+        <!-- Popular Music Section -->
+        <div class="section" id="popular-music">
+            <h2>Popular Music</h2>
+            <div class="music-list">
+                <!-- Music content will be populated here -->
+            </div>
+        </div>
+
+        <!-- Top Movies Section -->
+        <div class="section" id="top-movies">
+            <h2>Top Movies</h2>
+            <div class="movies-list">
+                <!-- Movie content will be populated here -->
+            </div>
+        </div>
+    </div> 
+  
+  
+
+    <!-- Main Content -->
+    <div class="main-container">
+ 
+      
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Browse</h2>
+            <ul>
+																																			 	 <li><a href="#top-movies">Top Movies</a></li>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#genre">Genres</a></li>
+                <li><a href="#popular-music">Popular Music</a></li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Movie Section -->
+            <section id="movies">
+                <h2>Top Movies</h2>
+                <div class="movie-list">
+                    <div class="movie">
+                        <img src="movie1.jpg" alt="Movie 1">
+                        <p>Movie 1</p>
+                        <button>Download</button>
+                    </div>
+                    <div class="movie">
+                        <img src="movie2.jpg" alt="Movie 2">
+                        <p>Movie 2</p>
+                        <button>Download</button>
+                    </div>
+                    <div class="movie">
+                        <img src="movie3.jpg" alt="Movie 3">
+                        <p>Movie 3</p>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music Section -->
+            <section id="music">
+                <h2>Popular Music</h2>
+				<div class="music-list">
+                    <div class="music">
+                        <img src="music4.jpg" alt="Song 1">
+                        <p>Song 1</p>
+                        <button>Download</button>
+                    </div>
+                    <div class="music">
+                        <img src="song2.jpg" alt="Song 2">
+                        <p>Song 2</p>
+                        <button>Download</button>
+                    </div>
+                    <div class="music">
+                        <img src="song3.jpg" alt="Song 3">
+                        <p>Song 3</p>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+  
+       
+   <!-- FAQ Section -->
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+        <button onclick="show1()" class="faq-question">How can I download music on this site?</button>
+        <div class="faq-answer1">
+            <p>To download music, simply browse our music library, select the song or album you'd like to download, and click the download button. You'll need an account to start downloading.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+        <button onclick="show2()" class="faq-question">Can I watch movies online here?</button>
+        <div class="faq-answer2">
+            <p>Yes, we offer a wide selection of movies that you can stream directly from our site. Just visit the movie section, pick a movie, and hit play!</p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+        <button onclick="show3()" class="faq-question">Are the downloads free?</button>
+        <div class="faq-answer3">
+              <p>We offer both free and premium content. Free content is available for everyone, but for premium music and movie downloads, youll need a subscription or to purchase credits.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item">
+        <button onclick="show4()" class="faq-question">What file formats are available for download?</button>
+        <div class="faq-answer4">
+            <p>We offer various file formats for music, including MP3 and FLAC. For movies, we provide MP4, MKV, and AVI formats for download.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="faq-item">
+        <button onclick="show5()" class="faq-question">How do I create an account to download content?</button>
+        <div class="faq-answer5">
+            <p>Creating an account is easy! Click on the "Sign Up" button at the top of the page, fill out your details, and start downloading or streaming instantly once youre logged in.</p>
+        </div>
+    </div>
+</div> 
+  
+
+    <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+             <p>&copy; 2025 MyStream. All rights reserved.</p>
+        </div>
+
+        <div class="footer-middle">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+  
+  <script src="script.js"> </script> 
+</body>
+</html>
+
+
+
+   
+   

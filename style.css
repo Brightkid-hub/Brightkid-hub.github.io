@@ -1,0 +1,408 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #1DB954;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #1DB954;
+}
+
+/* Main container with sidebar and content */
+.main-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #1c1c1c;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    color: #1DB954;
+}
+
+/* Content area styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+   
+
+
+button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}   
+
+
+
+
+
+
+/* Movie and Music List styles */
+.movie-list, .music-list {
+    display: flex;              /* Arrange items in a row */
+    gap: 20px;                  /* Space between items */
+    flex-wrap: nowrap;          /* Enable horizontal scrolling */
+    padding-bottom: 10px;       /* Space below the list */
+}
+
+.movie, .music {
+    width: 200px;               /* Set a fixed width for each item */
+    text-align: center;
+}
+
+.movie img, .music img {
+    width: 100%;                /* Make images fill the width of their container */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hide scrollbar for a cleaner look (optional) */
+.movie-list::-webkit-scrollbar, .music-list::-webkit-scrollbar {
+    height: 8px; /* height of the scrollbar */
+ }
+
+.movie-list::-webkit-scrollbar-thumb, .music-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.movie-list::-webkit-scrollbar-thumb:hover, .music-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+ /* Footer Styling */
+footer {
+    background-color: #1c1c1c;
+    color: #ccc;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-middle {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-left p {
+    font-size: 14px;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-middle ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-middle ul li a:hover {
+    color: #1DB954;
+}
+
+.social-icon {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1DB954;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }}
+
+    .footer-left, .footer-middle, .footer-right {
+        flex: 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-middle ul li {
+        display: block;
+        margin: 5px 0;
+    }  
+
+
+  
+  
+  
+   /* Search Container Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adds spacing above and below */
+}
+
+.search-input {
+    width: 300px; /* Width of the input box */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 25px; /* Rounded corners */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #1DB954; /* Highlight the input when focused */
+}
+
+.search-btn {
+    background-color: #1DB954;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #1ed760; /* Slightly lighter shade when hovered */
+}
+
+.search-btn i {
+    font-size: 18px; /* Make the search icon slightly bigger */
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        width: 80%; /* Input width adjusts on smaller screens */
+    }
+}
+  
+  
+  
+  
+  
+  /* FAQ Container Styling */
+.faq-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #1DB954; /* Green for music and movie theme */
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #1ed760; /* Lighter green when hovered */
+}
+
+/* FAQ Answer Styling */
+.faq-answer1, .faq-answer2, .faq-answer3, .faq-answer4, .faq-answer5 {
+    display: none; /* Initially hide the answer */
+    padding: 15px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+  
+  
+  
+          /* Basic Styles for Layout */
+     
+
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-bar button:hover {
+            background-color: #1ed760;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card .title {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card .artist, .card .release-date {
+            font-size: 14px;
+            color: gray;
+        }   
